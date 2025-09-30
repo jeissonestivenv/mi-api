@@ -48,6 +48,6 @@ app.delete('/clientes/:id', (req, res) => {
   res.json({ eliminado });
 });
 
-// Puerto para Render
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`API corriendo en puerto ${port}`));
+// Puerto dinámico para Render
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`✅ API corriendo en puerto ${PORT}`));
